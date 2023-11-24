@@ -240,3 +240,22 @@ hr:before {
 figure.highlight pre .addition {
     color: #00bf03 !important; /* 设置.addition类的颜色 */
 }
+/*弹框样式*/
+.message {
+    position: fixed;
+    top: 6%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.message.show {
+    opacity: 1;
+    visibility: visible;
+}

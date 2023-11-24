@@ -231,3 +231,31 @@ $("#rightmenu-mask").contextmenu(function () {
     removeRightMenu();
     return false;
 });
+//随便逛逛
+let bq = {};
+bq.toRandomPost = function(){
+    //urls:随机切换的路径
+    var urls=[
+        "https://beiqiu666.github.io/post/c8f15973.html",
+        "https://beiqiu666.github.io/post/4a17b156.html",
+        "https://beiqiu666.github.io/post/f13fd461.html",
+        "https://beiqiu666.github.io/post/b4bbe9af.html",
+        "https://beiqiu666.github.io/post/788b6b51.html",
+        "https://beiqiu666.github.io/post/efc815e8.html",
+        "https://beiqiu666.github.io/post/92b7df7c.html",
+        "https://beiqiu666.github.io/post/502a6bfe.html",
+        "https://beiqiu666.github.io/post/f29ac09e.html",
+        "https://beiqiu666.github.io/music/index.html",
+        "https://beiqiu666.github.io/circle/index.html",
+        "https://beiqiu666.github.io/categories/index.html",
+        "https://beiqiu666.github.io/tags/index.html",
+        "https://beiqiu666.github.io/photos/index.html",
+        "https://beiqiu666.github.io/movies/index.html",
+        "https://beiqiu666.github.io/about/index.html",
+        "https://beiqiu666.github.io/sponsorWall/index.html",
+        "https://beiqiu666.github.io/comment/index.html",
+        "https://beiqiu666.github.io/link/index.html",
+    ];
+    n = Math.floor(Math.random()*urls.length);
+    location.href= urls[n];
+}
