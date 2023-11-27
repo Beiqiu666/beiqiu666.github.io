@@ -319,13 +319,18 @@ figure.highlight pre .addition {
 }
 
 .btn-xz {
+    border-radius: 6px;
     display: block;
-    background-color: #f47466;
+    background-color: #1f1f1f;
     color: #ffffff;
     text-align: center;
     line-height: 2.4;
     margin: 8px 0;
     cursor: pointer !important;
+}
+
+.btn-xz-box:hover .btn-xz {
+    background-color: #f47466;
 }
 
 .btn-xz:hover {
