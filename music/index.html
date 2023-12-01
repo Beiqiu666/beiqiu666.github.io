@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HeoMusic - 用音乐感染人心</title>
-  <link rel="stylesheet" type="text/css" href="./css/APlayer.min.css">
-  <link rel="stylesheet" type="text/css" href="./main.css">
-  <link rel="icon" type="image/x-icon" href="./img/icon.webp">
-  <link rel="apple-touch-icon" href="./img/icon-r.webp">
+  <title>北秋的音乐库 - 用音乐感染人心</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/beiqiu666/bq-blog@0.0.3/music/css/APlayer.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/beiqiu666/bq-blog@0.0.3/music/css/main.css">
+  <link rel="icon" type="image/x-icon" href="https://z1.ax1x.com/2023/11/16/pitl5tA.jpg">
+  <link rel="apple-touch-icon" href="https://z1.ax1x.com/2023/11/16/pitl5tA.jpg">
   <meta name="apple-mobile-web-app-title" content="音乐">
-  <link rel="bookmark" href="./img/icon.webp">
-  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="./img/icon-r.webp">
+  <link rel="bookmark" href="https://z1.ax1x.com/2023/11/16/pitl5tA.jpg">
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://z1.ax1x.com/2023/11/16/pitl5tA.jpg">
   <meta name="description" content="一个简单好用的音乐播放器。">
-  <link rel="manifest" href="/manifest.json">
+  <link rel="manifest" href="https://cdn.jsdelivr.net/gh/beiqiu666/bq-blog@0.0.3/music/json/manifest.json">
   <script>
     var _hmt = _hmt || [];
     (function() {
@@ -29,12 +29,19 @@
 <div id="heoMusic-page">
 </div>
 <script>
-  var userId = "7497337557";
-  var userServer = "netease";
-  var userType = "playlist";
+  // 获取当前页面的URL
+  let url = new URL(window.location.href);
+  // 获取URL中的search参数
+  let searchParams = new URLSearchParams(url.search);
+  //播放列表的id
+  let userId = searchParams.get("id") || "7497337557";
+  //播放列表的服务商，例如 netease（网易云音乐）,tencent（腾讯）,kugou（酷狗）,xiami（小米音乐）,baidu（百度音乐）
+  let userServer = searchParams.get("server") || "netease";
+  //播放列表的类型，例如song（单曲）, playlist（歌单，默认）, album（专辑）, search（搜索结果）, artist（歌手）
+  let userType = searchParams.get("type") || "playlist";
 </script>
-<script src="./js/APlayer.min.js"></script>
-<script src="./js/Meting2.min.js"></script>
-<script async data-pjax src="./js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/beiqiu666/bq-blog@0.0.3/music/js/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/beiqiu666/bq-blog@0.0.3/music/js/Meting2.min.js"></script>
+<script async data-pjax src="https://cdn.jsdelivr.net/gh/beiqiu666/bq-blog@0.0.3/music/js/main.js"></script>
 </body>
 </html>
