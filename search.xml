@@ -232,11 +232,11 @@
       
         <tags>
             
+            <tag> 教程 </tag>
+            
             <tag> java </tag>
             
             <tag> 缓存原理 </tag>
-            
-            <tag> 教程 </tag>
             
         </tags>
       
@@ -261,9 +261,9 @@
       
         <tags>
             
-            <tag> 教程 </tag>
-            
             <tag> Java </tag>
+            
+            <tag> 教程 </tag>
             
         </tags>
       
@@ -342,9 +342,9 @@
       
         <tags>
             
-            <tag> java </tag>
-            
             <tag> 教程 </tag>
+            
+            <tag> java </tag>
             
             <tag> MybatisPlus </tag>
             
